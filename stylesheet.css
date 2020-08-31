@@ -1,0 +1,541 @@
+/*
+Symbolica Dark CSS Theme v 1.6
+Created by /u/RoboticPlayer
+
+Inspired by /r/Naut, /r/Structura
+Based on /r/Symbolica
+Icons from https://icons8.com
+
+If you wish to use this theme for your subreddit, please let me know and give me credit!
+*/
+
+* {
+	font-family: Lato, arial, sans-serif;
+}
+
+*,
+.pagename a,
+.side .md h1,
+.wiki-page-content .md h1 {
+	color: #A9A9A9;
+}
+
+#header .tabmenu li:not(.selected) a:hover,
+#mail.havemail:after,
+#modmail.havemail:after,
+.md h5 a,
+#mail.havemail:after,
+#modmail.havemail:after,
+#new_modmail.havemail:after {
+	color: #FFFFFF;
+}
+
+.entry .buttons .reportbtn {
+	color: #FF0000;
+}
+
+#header-bottom-right a,
+.res-navTop #header-bottom-right a,
+#userbarToggle {
+	color: orange;
+}
+
+.res-nightmode #header .selected a {
+	color: #FF4500;
+}
+
+.likes .score.likes,
+.res-voteEnhancements-highlightScores span.score {
+	color: #0FF;
+}
+
+.thing .title:visited,
+.thing .source-url:visited {
+	color: #5ba29c;
+}
+
+.expando .md a,
+.comment .md a {
+	color: #0082cc!important;
+}
+
+.res-nightmode .thing .md,
+.expando .md *,
+button {
+	color: #000;
+}
+
+#userbarToggle,
+.tabmenu li.selected a,
+.tabmenu li a,
+#header-bottom-right,
+.res-navTop #header-bottom-right,
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .RES-keyNav-activeElement .md-container,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement,
+div.commentarea div.RES-keyNav-activeElement .md,
+div.commentarea div.RES-keyNav-activeElement.entry,
+div.nocollapsed,
+.RES-keyNav-activeElement,
+.RES-keyNav-activeElement .md-container,
+.linkinfo,
+.NERPageMarker,
+.new-comment .usertext-body,
+body.res-nightmode>div.content,
+.res-nightmode #header .tabmenu a,
+.res-nightmode .titlebox,
+.res-nightmode .side .redditname,
+.res-nightmode .titlebox,
+.res-nightmode .side .redditname {
+	background: transparent;
+}
+
+#mail.havemail:after,
+#modmail.havemail:after,
+#new_modmail.havemail:after {
+	background: #FF4500;
+}
+
+#header .tabmenu {
+	background: #000;
+}
+
+.sidecontentbox a.helplink {
+	background: #4434bc;
+}
+
+.account-activity-box a {
+	background: #1e5047;
+}
+
+.side .md h6 a {
+	background: #1E126B;
+}
+
+body,
+.side,
+.titlebox form.toggle,
+.leavemoderator,
+.icon-menu a,
+.sidebox .subtitle,
+.sidebox .spacer,
+#search input[type=text],
+#progressIndicator,
+.link.odd {
+	background: url(%%primary-background%%);
+}
+
+.sheets .col textarea,
+.link .usertext-body .md,
+.md textarea {
+	background: url(%%post-background%%);
+}
+
+.thing.stickied .thumbnail {
+	background: url(%%sticky%%) center no-repeat;
+}
+
+.thing.locked .thumbnail,
+.thing.archived .thumbnail {
+	background: url(%%locked%%) center no-repeat;
+}
+
+.thing.over18 .thumbnail {
+	background: url(%%nsfw%%) center no-repeat;
+}
+
+#sr-header-area,
+#RESShortcutsEditContainer,
+#RESShortcutsRight,
+#RESShortcutsLeft,
+#RESShortcutsAdd,
+#RESShortcutsSort {
+	background: url(%%lighter-background%%);
+	font-size: 13px;
+}
+
+.md pre code,
+.md code,
+code,
+pre code,
+.wiki-page-content .md pre,
+.link .even {
+	background: url(%%lighter-background%%);
+}
+
+body.listing-page .thing.link:hover {
+	background: url(%%hover-background%%);
+}
+
+#header {
+	background: url(%%banner%%) 50%;
+	height: 200px;
+}
+
+#header-img.default-header,
+#header-img {
+	background: url(%%snoo%%);
+}
+
+#mail.havemail {
+	background: url(%%mail-full%%) no-repeat bottom center;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#mail.nohavemail {
+	background: url(%%mail-empty%%) no-repeat bottom center;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#modmail.havemail {
+	background: url(%%modmail-full%%) no-repeat bottom center;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+#modmail.nohavemail {
+	background: url(%%modmail-empty%%) no-repeat bottom center;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+body.listing-page .thing.link:hover {
+	transition: .1s;
+}
+
+#header .tabmenu li:not(.selected) a {
+	color: gray;
+	transition: .25s;
+}
+
+#header .tabmenu li:not(.selected) a:hover {
+	transition: .25s;
+}
+
+.pagename a {
+	font-size: 45px;
+}
+
+#header-bottom-right a,
+.res-navTop #header-bottom-right a {
+	font-size: 17px;
+	top: 5px;
+}
+
+#userbarToggle {
+	border: none;
+	font-weight: 700!important;
+	font-size: 20px;
+	top: 5px;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#header-img.default-header,
+#header-img {
+	position: absolute;
+	bottom: 75px;
+	z-index: 99;
+	padding-left: 46px;
+	height: 45px;
+	width: 3px;
+	margin: 0 8px 0 0;
+}
+
+.titlebox .users-online {
+	display: block;
+}
+
+.titlebox .users-online .number {
+	font-style: italic;
+	font-size: 11px;
+}
+
+.titlebox .users-online,
+.titlebox .number {
+	cursor: text;
+}
+
+#header .tabmenu {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-transform: uppercase;
+	display: block;
+	height: 30px;
+	opacity: 0.5;
+}
+
+.tabmenu li.selected a,
+.tabmenu li a {
+	border: 0;
+	font-size: 20px;
+}
+
+.pagename {
+	position: absolute;
+	bottom: 70px;
+	left: 55px;
+}
+
+.thumbnail img {
+	border-radius: 100px;
+	width: 55px;
+	height: 55px;
+	margin-left: 7px;
+}
+
+.titlebox h1 a,
+.morelink a {
+	font-size: 20px;
+}
+
+.side:after {
+	content: "This subreddit uses Symbolica Dark by /u/RoboticPlayer";
+}
+
+.sidecontentbox a.helplink,
+.account-activity-box a {
+	display: block;
+	border: none;
+	text-align: center;
+	float: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.side {
+	border-bottom-left-radius: 5px;
+	border-left: 2px solid rgba(144, 144, 144, .25);
+	border-bottom: 2px solid rgba(144, 144, 144, .25);
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin: 0 0 50px 10px;
+}
+
+.side,
+.titlebox form.toggle,
+icon-menu a,
+.entry .buttons li a,
+.commentarea .menuarea .toggle a,
+a.author,
+.comment .author,
+.domain a,
+.likes .score.likes,
+.res-voteEnhancements-highlightScores span.score,
+.tagline,
+.search-result-meta {
+	font-size: 13px;
+}
+
+.side .md h6 a {
+	display: block;
+	border: none;
+	text-align: center;
+	float: none;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+#search input[type=text] {
+	border-radius: 5px;
+}
+
+#header-bottom-right,
+.res-navTop #header-bottom-right {
+	top: 90px;
+	right: 150px;
+}
+
+#header-bottom-right .modmail a {
+	top: -5px;
+}
+
+.res-accountSwitcher-dropDownStyle-alien #RESAccountSwitcherIcon {
+	height: 20px;
+	width: 15px;
+}
+
+#mail.havemail:after {
+	content: 'New message!';
+}
+
+40% {
+	-webkit-transform: scale(1) translateX(0);
+	transform: scale(1) translateX(0);
+	opacity: 1;
+}
+
+74%,
+75% {
+	-webkit-transform: scale(1) translateX(0);
+	transform: scale(1) translateX(0);
+}
+
+100% {
+	-webkit-transform: translateX(-200%);
+	transform: translateX(-200%);
+	opacity: .9;
+}
+
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+	border-radius: 20px;
+}
+
+.wiki-page .pageactions {
+	border: none;
+	text-transform: uppercase;
+}
+
+.md h5 a {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 15px;
+	background: #38A7DF;
+	padding: 5px;
+}
+
+.md pre code,
+.md code,
+.wiki-page-content .md pre,
+.sidecontentbox .content,
+code,
+pre code {
+	border-radius: 10px;
+}
+
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .RES-keyNav-activeElement .md-container,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement,
+div.commentarea div.RES-keyNav-activeElement .md,
+div.commentarea div.RES-keyNav-activeElement.entry,
+div.nocollapsed,
+.RES-keyNav-activeElement,
+.RES-keyNav-activeElement .md-container {
+	border-right: 3px solid blue!important;
+	border-radius: 10px;
+}
+
+.linkinfo {
+	border: none;
+	font-size: 12px;
+}
+
+.link {
+	padding: 5px 7px 5px 15px;
+}
+
+.link.odd {
+	transition: .1s;
+}
+
+.link.even {
+	transition: .1s;
+}
+
+#header~* .RES-keyNav-activeElement {
+	background-color: transparent!important;
+}
+
+.new-comment .usertext-body {
+	border: none;
+}
+
+.md {
+	font-size: 15px!important;
+}
+
+.thing .title {
+	font-size: 16px;
+}
+
+#new_modmail {
+	vertical-align: super;
+}
+
+#mail.havemail:after,
+#modmail.havemail:after,
+#new_modmail.havemail:after {
+	position: fixed;
+	left: 0;
+	opacity: 0;
+	box-shadow: 1px 1px 3px #222;
+	font-size: 25px;
+	text-indent: 0;
+	-webkit-animation: mail 5s 1s;
+	animation: mail 5s 1s;
+	bottom: 0;
+	margin: 1em;
+	padding: 1em;
+}
+
+#userbarToggle,
+#mail.havemail:after,
+#modmail.havemail:after,
+#new_modmail.havemail:after .sr-bar a {
+	font-weight: 700;
+}
+
+#mail.havemail,
+#mail.nohavemail,
+#modmail.havemail,
+#modmail.nohavemail,
+#new_modmail.havemail,
+#new_modmail.nohavemail {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+#header-bottom-right #new_modmail.havemail,
+#header-bottom-right #new_modmail.nohavemail {
+	top: 10px;
+	left: 4px;
+}
+
+.morelink .nub,
+#mail img {
+	display: none;
+}
+
+.morelink,
+.morelink:hover {
+	border-radius: 20px;
+	transition: .25s;
+}
+
+#modmail,
+#modmail,
+#new_modmail {
+	vertical-align: top;
+}
+
+#modmail.havemail:after,
+#modmail.havemail:after,
+#new_modmail.havemail:after {
+	content: 'New modmail!';
+}
+
+
+/* =====================================================================
+
+         End of Symbolica Dark - Add customizations below
+
+===================================================================== */
