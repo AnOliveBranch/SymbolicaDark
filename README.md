@@ -1,4 +1,4 @@
 # SymbolicaDark
 CSS Theme for old Reddit
 
-See it in action at https://www.old.reddit.com/r/SymbolicaDark
+See it in action at https://old.reddit.com/r/SymbolicaDark
